@@ -1,0 +1,2 @@
+python eval_rcmvsnet_tanks.py --split "intermediate" --loadckpt "./pretrain/model_000014_cas.ckpt"  --plydir "./tanks_submission" --outdir './tanks_exp'
+python eval_rcmvsnet_tanks.py --split "advanced"  --loadckpt "./pretrain/model_000014_cas.ckpt" --plydir "./tanks_submission" --outdir './tanks_exp'

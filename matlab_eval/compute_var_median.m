@@ -1,0 +1,9 @@
+resultPath='/home/dichang/code/related_work/u-mvsnet/dtu_eval/TotalStat_mvsnet.mat';
+x=load(resultPath);
+data=x.BaseStat;
+varacc = mean(data.VarData)
+varcomp = mean(data.VarStl)
+varoverall = (varacc+varcomp)/2
+medacc = mean(data.MedData)
+medcomp = mean(data.MedStl)
+medoverall = (medacc+medcomp)/2

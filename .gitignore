@@ -1,0 +1,6 @@
+cascade_nerf_train_history/
+.vscode/
+__pycache__/
+losses/__pycache__/
+models/__pycache__/
+datasets/__pycache__/

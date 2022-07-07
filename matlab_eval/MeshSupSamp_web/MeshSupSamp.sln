@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeshSupSamp", "MeshSupSamp\MeshSupSamp.vcxproj", "{38D206C0-4C79-45B6-B5C7-7B729B1C519D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38D206C0-4C79-45B6-B5C7-7B729B1C519D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38D206C0-4C79-45B6-B5C7-7B729B1C519D}.Debug|Win32.Build.0 = Debug|Win32
+		{38D206C0-4C79-45B6-B5C7-7B729B1C519D}.Debug|x64.ActiveCfg = Debug|x64
+		{38D206C0-4C79-45B6-B5C7-7B729B1C519D}.Debug|x64.Build.0 = Debug|x64
+		{38D206C0-4C79-45B6-B5C7-7B729B1C519D}.Release|Win32.ActiveCfg = Release|Win32
+		{38D206C0-4C79-45B6-B5C7-7B729B1C519D}.Release|Win32.Build.0 = Release|Win32
+		{38D206C0-4C79-45B6-B5C7-7B729B1C519D}.Release|x64.ActiveCfg = Release|x64
+		{38D206C0-4C79-45B6-B5C7-7B729B1C519D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
