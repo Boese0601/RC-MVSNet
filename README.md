@@ -20,7 +20,7 @@
     <a href="https://arxiv.org/abs/2203.03949">Arxiv</a> | <a href="https://niessnerlab.org/projects/chang2022rcmvsnet.html">Project page</a>
     <br />
   </p>
-
+</div>
 ## Introduction
 
 This is the official pytorch implementation of our ECCV2022 paper: RC-MVSNet: Unsupervised Multi-View Stereo with Neural Rendering. In this work, we introduce RC-MVSNet, a neural-rendering based unsupervised Multi-View Stereo 3D reconstruction approach. First, we leverage NeRF-like rendering to generate consistent photometric supervision for non-Lambertian surfaces in unsupervised MVS task. Second, we impose depth rendering consistency loss to refine the initial depth map predicted by naive photometric consistency loss. We also propose Gaussian-Uniform sampling to improve NeRF's ability to learn the geometry features close to the object surface, which overcomes occlusion artifacts present in existing approaches. We achieved state-of-the-art performance on DTU and Tanks\&Temples benchmarks and competitive performance to many supervised methods.
