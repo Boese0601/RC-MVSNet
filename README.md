@@ -17,7 +17,7 @@
     <br />
     <strong>ECCV 2022</strong>
     <br />
-    <a href="https://arxiv.org/abs/2203.03949">Arxiv</a> | <a href="https://niessnerlab.org/projects/chang2022rcmvsnet.html">Project page</a>
+    <a href="https://arxiv.org/abs/2203.03949">Arxiv</a> | <a href="https://boese0601.github.io/rc-mvsnet">Project page</a>
     <br />
   </p>
 </div>
