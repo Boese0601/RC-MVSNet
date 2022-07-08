@@ -5,7 +5,7 @@
 
   <p align="center">
     <a href="https://boese0601.github.io">Di Chang</a><sup>1</sup>,
-	<a href=https://aljazbozic.github.io/ target=_blank rel=noopener>Aljaž Božic</a><sup>1</sup>, 
+	<a href=https://aljazbozic.github.io/ target=_blank rel=noopener>Aljaž Božič</a><sup>1</sup>, 
     <a href="https://people.epfl.ch/tong.zhang?lang=en" target=_blank rel=noopener>Tong Zhang</a><sup>2</sup>, 
       Qingsong Yan<sup>3</sup>, 
     Yingcong Chen<sup>3</sup>, 
