@@ -165,10 +165,10 @@ Our code is distributed under the MIT License. See `LICENSE` file for more infor
 ## Citation
 
 ```bibtex
-@article{chang2022rc,
+@inproceedings{chang2022rc,
   title={RC-MVSNet: Unsupervised Multi-View Stereo with Neural Rendering},
   author={Chang, Di and Bo{\v{z}}i{\v{c}}, Alja{\v{z}} and Zhang, Tong and Yan, Qingsong and Chen, Yingcong and S{\"u}sstrunk, Sabine and Nie{\ss}ner, Matthias},
-  journal={arXiv preprint arXiv:2203.03949},
+  booktitle={Proceedings of the European conference on computer vision (ECCV)},
   year={2022}
 }
 ```
