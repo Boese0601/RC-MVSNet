@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79eac47f-23c3-4839-b34d-6b42d5ff16cf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2396" y="345" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1666644276453">
+      <screen x="1792" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2396" y="345" key="#com.intellij.fileTypes.FileTypeChooser/-2560.-92.2560.1415/0.25.1792.1029/1792.25.1920.1055@1792.25.1920.1055" timestamp="1666644276453" />
+    <state x="2197" y="175" key="SettingsEditor" timestamp="1666644222314">
+      <screen x="1792" y="25" width="1920" height="1055" />
+    </state>
+    <state x="2197" y="175" key="SettingsEditor/-2560.-92.2560.1415/0.25.1792.1029/1792.25.1920.1055@1792.25.1920.1055" timestamp="1666644222314" />
+  </component>
+</project>
