@@ -165,7 +165,8 @@ def save_depth(img_wh=(1920, 1056)):
             depth_interals_ratio=[float(d_i) for d_i in args.depth_inter_r.split(",") if d_i],
             share_cr=args.share_cr,
             cr_base_chs=[int(ch) for ch in args.cr_base_chs.split(",") if ch],
-            grad_method=args.grad_method,norm=args.gn,dcn=args.dcn)
+            grad_method=args.grad_method)
+            # grad_method=args.grad_method,norm=args.gn,dcn=args.dcn)
 
     # load checkpoint file specified by args.loadckpt
     print("loading model {}".format(args.loadckpt))
