@@ -2,7 +2,7 @@ name: Github Release
 on:
   push:
     branches:
-      - main
+      - hold_we_are_not_ready
     paths-ignore:
       - 'github_release_version.json'
 
