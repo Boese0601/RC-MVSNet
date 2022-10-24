@@ -1,0 +1,58 @@
+name: Github Release
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'github_release_version.json'
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    outputs:
+      version_tag: ${{ steps.save_tag.outputs.version_tag }}
+      skipped: ${{ steps.changelog.outputs.skipped }}
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GHA_TOKEN }}
+
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3
+        with:
+          github-token: ${{ secrets.GHA_TOKEN }}
+          fallback-version: '0.0.1'
+          output-file: "false"
+          tag-prefix: 'v'
+          version-file: ./github_release_version.json
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GHA_TOKEN }}
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          release_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
+
+      - name: Save Tag
+        id: save_tag
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        run: |
+          tag=${{ steps.changelog.outputs.tag }}
+          echo "tag $tag"
+          echo "::set-output name=version_tag::${tag}"
+
+  build_and_deploy_docker_image_test:
+    needs: [ changelog ]
+    if: ${{ needs.changelog.outputs.skipped == 'false' }}
+    uses: ./.github/workflows/build-docker-image.workflow.yml
+    with:
+      tag: ${{ needs.changelog.outputs.version_tag }}
+    secrets:
+      GCP_SA_KEY: ${{ secrets.GCP_SECRET_TEST }}
+      GCP_PROJECT: unity-ai-dt-cv-data-lake-test
+
